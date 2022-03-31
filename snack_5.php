@@ -21,7 +21,11 @@
 
         <p>
             <?php
-            echo $paragrafi[$i] . '.';            
+            if($i < count($paragrafi) - 1){
+                echo $paragrafi[$i] . '.';
+            }else{
+                echo $paragrafi[$i];
+            }
             ?>
         </p>
 
